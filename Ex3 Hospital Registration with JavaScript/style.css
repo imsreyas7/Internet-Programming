@@ -1,0 +1,289 @@
+html,body,div,h1,h2,p,img,section 
+{
+    display: block;
+}
+
+#clock {
+  color: #35dab1;
+  font-size: 3vw;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.486);
+  font-family: 'Rajdhani','RocknRoll One',"Josefin Sans";
+  border-radius: 15px;
+  width:fit-content;
+  
+  margin: auto;
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+ol,ul 
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+.clear 
+{
+    clear: both;
+}
+
+img 
+{
+    max-width: 100%;
+}
+
+
+body 
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100%;
+    background-image: linear-gradient(to bottom right, #000000,#1c5e94);
+    background-size: cover;
+    background-position: center;
+}
+
+.register-form 
+{
+    box-sizing: border-box;
+	border-radius: 25px;
+    padding: 3vw;
+    background: rgba(0, 0, 0, 0.486);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 
+{
+    font-size: 3.5vw;
+    margin: 3.5vw 0vw 2vw;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 3px 3px 3px #136196;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: "Josefin Sans",'Source Sans Pro', sans-serif;
+}
+
+h2.sub-heading,
+h3.sub-heading
+{
+    text-align: center;
+    font-size: 24px;
+    color: #23b4cc;
+    margin-bottom: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.86);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*-- form --*/
+
+#addict li
+{
+  color: #23b4cc;
+  appearance:button;
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator 
+{
+    color: black;
+    display: block;
+    background-color: white;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+
+.radio-section
+{
+    text-align: left;
+    margin: 0.7em 0;
+}
+
+.radio-section h6 
+{
+    display: inline;
+    color: #82bb3b;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.radio-section ul 
+{
+    display: block;
+}
+
+.radio-buttons li input[type="radio"]
+{
+    cursor: pointer;
+}
+
+.radio-buttons li label 
+{
+    color: #23b4cc;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form textarea,
+select.form-control,
+input 
+{
+    width:100%;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    padding: 10px 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.register-forms textarea 
+{
+    resize: none;
+    height: 100px;
+}
+
+.field-agileinfo-spc 
+{
+    margin-bottom: 1em;
+}
+
+.form-w3-agile-text 
+{
+    width: 100%;
+}
+
+select.form-control option 
+{
+    background: #000;
+}
+
+.register-form input[type="submit"],
+.register-form input[type="reset"] 
+{
+    text-transform: capitalize;
+    background: #23b4cc;
+    color: rgb(0, 0, 0);
+    padding: 0.5em 1em;
+    border: none;
+    width: 48%;
+    margin-top: 1em;
+    float: left;
+    outline: none;
+    font-family: 'Rajdhani','Source Sans Pro', sans-serif;
+}
+
+.register-form input[type="reset"] 
+{
+    float: right;
+}
+
+.register-form input[type="submit"] 
+{
+    background: #23b4cc;
+}
+
+.register-form input[type="submit"]:hover 
+{
+    background: #82bb3b;
+    color: #fff;
+}
+
+.register-form input[type="reset"]:hover 
+{
+    background: #82bb3b;
+    color: #fff;
+}
+
+.register-form ::-webkit-input-placeholder 
+{
+    color: #fff;
+}
+
+
+.register-form label 
+{
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.83);
+    letter-spacing: 2px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+ul.radio-buttons li 
+{
+    display: inline-block;
+    margin: .8em 2em 0em .3em;
+}
+
+.copyright 
+{
+    margin: 2em 1em;
+    text-align: center;
+}
+
+.copyright p 
+{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 400;
+}
+
+
+/*DISPLAY PAGE*/
+.display_cont
+{
+    box-sizing: border-box;
+    padding: 3vw;
+    background: rgba(0, 0, 0, 0.78);
+    max-width: 700px;
+    margin: 0 auto;
+    width:fit-content;
+    border-radius: 25px;
+
+}
+
+h2,h3
+{
+  font-family: 'Josefin Sans','Source Sans Pro', sans-serif;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+.text_box
+{
+  color: #23b4cc;
+}
