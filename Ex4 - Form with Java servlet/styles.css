@@ -1,0 +1,63 @@
+body{
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(133,30,18);
+    background: linear-gradient(135deg, rgb(0, 0, 0) 32%, rgb(9, 59, 92) 62%);  
+    color: white;
+    align-items: center;
+}
+
+h1{
+	font-size: 50pt;
+	text-align: center;
+	color: lavender;
+}
+
+table{
+    width: 50%;
+    border-radius: 10px;
+	text-align: center;
+    border-spacing: 20px;
+    color: lavenderblush;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 cyan, 0 6px 20px 0 cyan;
+
+}
+
+#button {
+	width: 40%;
+    background-color: navy;
+    color: lightcyan;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0px;
+    border: 1px solid white;
+    padding: 8px 8px;
+    font-size: 25px;
+	box-shadow: 0 4px 8px 0 mintcream, 0 6px 20px 0 mintcream;
+}
+
+input .female{
+    display: inline;
+    text-align: left;
+}
+
+input .male{
+    display: inline;
+    text-align: left;
+}
+
+input,select,textarea {
+    width: 50%;
+    background-color: lightcyan;
+    color: black;
+    padding: 10px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+}
+

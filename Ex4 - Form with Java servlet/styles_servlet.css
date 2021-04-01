@@ -1,0 +1,22 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(133,30,18);
+    background: linear-gradient(135deg, rgb(0, 0, 0) 32%, rgb(58, 2, 75) 62%);  
+    color:white;
+    padding:2rem;
+}
+
+h1{
+    text-align: center; 
+    font-size: 50pt;
+    color: lavender;
+}
+
+table {
+    border: 2px solid black; 
+    font-size: 25px; 
+    border-spacing: 25px;
+    color: aquamarine;
+    box-shadow: 0 4px 8px 0 cyan, 0 6px 20px 0 cyan;
+
+}

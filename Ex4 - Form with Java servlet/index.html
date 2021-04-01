@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Registration</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Employee Registration Form</h1>
+	<hr><br>
+    <table>
+        <form name="regform" id="regform" action="http://localhost:8080/Ex4/Servlet" >
+            <tr>
+                <td><label for="id">Employee ID : </label></td>
+                <td><input name="id" id="id" type="number" required></td>
+            </tr>
+            <tr>
+                <td><label for="name">Name of Employee : </label></td>
+                <td><input name="name" id="name" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth : </label></td>
+                <td><input name="dob" id="dob" type="date" placeholder="dd/mm/yyyy"></td>
+            </tr>
+            <tr>
+                <td><label >Gender : </label></td>
+                    <td><input id="male" type="radio" value="Male" name="gender"><label for="male">Male</label>
+                    <input id="female" type="radio" value="Female" name="gender"><label for="female">Female</label>
+                    <input id="other" type="radio" value="Other" name="gender"><label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="status">Marital Status : </label></td>
+                    <td><select name="status" id="status">
+                        <option value="none"></option>
+                        
+                        <option value="single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                    </select></td>
+                </tr>
+            <tr>
+                <td><label for="designation">Designation : </label></td>
+                <td><select name="designation" id="designation" required>
+                    <option value="none"></option>
+                    <option value="RA">Assistant Professor</option>
+                    <option value="TA">HOD</option>
+                    <option value="AP">Associate Professor</option>
+                    <option value="Prof">Professor</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="dept">Department : </label></td>
+                <td><select name="dept" id="dept">
+                    <option value="none"></option>
+                    <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="ECE">ECE</option>
+                    <option value="Mech">Mech</option>
+                    <option value="Chem">Chem</option>
+                    <option value="BME">BME</option>
+                    <option value="EEE">EEE</option>
+                    <option value="Civil">Civil</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="salary">Basic Pay : </label></td>
+                <td><input name="salary" id="salary" type="number" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Contact number : </label></td>
+                <td><input name="phone" id="phone" type="tel"  required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address : </label></td>
+                <td><textarea name="address" id="address" placeholder="Address" required></textarea></td>
+            </tr>
+            
+           
+            <tr>
+                <td><input type="submit" value="Submit" id="button" ></td>
+                <td><input type="button" value="Clear Rows" id="button" onclick="myReset()"></td>
+            </tr>
+        </form>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
