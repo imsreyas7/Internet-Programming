@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>PMS - Update</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="head1">Patient Management System - Update </h1>
+    <hr />
+    <br />
+    <!--<div id="clock">08:06:21</div>-->
+    
+      
+      <form id="patient_form" action="/Ex42/UpdateRec" method="GET">
+        <label for="pid">Patient ID</label> <br />
+        <input type="text" id="pid" name="pid"/><br /><br />
+        <label for="address">Address</label><br />
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="phone">Phone</label><br />
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" oninvalid="setCustomValidity('Should be of length 10\nCan contain only 0-9')"/>
+        <br /><br />
+
+        <br>
+        <input type="submit" id="button" value="Update Record"/><br /><br />
+        <input type="reset" id="button" value="Reset" /> <br /><br />
+      </form>
+    </fieldset>
+
+    <hr />
+  </body>
+</html>

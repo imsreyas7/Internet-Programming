@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PMS - Login</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            
+    
+            function checkCreds(){
+                var user = document.getElementById("uname").value;
+                var pass = document.getElementById("pwd").value;
+    
+                if(user === "admin" && pass === "node"){
+                    document.getElementById("uname").value = "";
+                    document.getElementById("pwd").value = "";
+                    window.open("homepage.html");
+                }
+                else{
+                    alert("Invalid credentials. Please re-enter");
+                    document.getElementById("uname").value = "";
+                    document.getElementById("pwd").value = "";
+                    document.getElementById("uname").focus();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to Patient Mangement System</h1>
+        <h1><br></h1>
+        <div style="text-align: center;">
+            <form style="width: 50%; border-radius: 30px; box-shadow: 0 6px 20px 0 cyan, 0 6px 20px 0 cyan;">
+            <h2 style="color:rgb(139, 250, 135);">LOGIN PORTAL</h2><br>
+            Username :<input type="text" name="uname" id="uname"/><br><br>
+            Password  : <input type="password" name="pwd" id="pwd"/><br><br>
+            <input type="submit" value="Login" id="button" onclick="checkCreds()"/>
+            </form>
+        </div>
+        
+    </body>
+</html>
