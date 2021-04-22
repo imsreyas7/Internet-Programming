@@ -1,0 +1,29 @@
+<bank>
+    <record>
+        <state>Tamil Nadu</state>
+        <district>Chennai</district>
+        <branch>KK Nagar</branch>
+        <address>Liberty Road</address>
+        <ifsc>TNKKN123</ifsc>
+        <micr>54654</micr>
+        <bcode>KKN123</bcode>
+    </record>
+    <record>
+        <state>Tamil Nadu</state>
+        <district>Chennai</district>
+        <branch>Teynampet</branch>
+        <address>Cathedral Road</address>
+        <ifsc>TNTEY409</ifsc>
+        <micr>19649</micr>
+        <bcode>TEY409</bcode>
+    </record>
+    <record>
+        <state>Karnataka</state>
+        <district>Mysore</district>
+        <branch>KRS</branch>
+        <address>Brindavan Marg</address>
+        <ifsc>KKRS633</ifsc>
+        <micr>89424</micr>
+        <bcode>KKRS409</bcode>
+    </record>
+</bank>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background: rgb(18, 45, 133);
+    background-image: linear-gradient(90deg, rgb(0, 0, 0) 32%, rgb(4, 46, 73) 62%);
+    color: azure;
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#button {
+	width: 30%;
+    background-color: rgb(9, 90, 90);
+    color: lightcyan;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid white;
+    padding: 8px 8px;
+    font-size: 25px;
+	box-shadow: 0 4px 8px 0 mintcream, 0 4px 8px 0 mintcream;
+}
+
+#obutton {
+	width: 90%;
+    background-color: rgb(9, 90, 90);
+    color: lightcyan;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid white;
+    padding: 8px 8px;
+    font-size: 25px;
+	box-shadow: 0 4px 8px 0 mintcream, 0 4px 8px 0 mintcream;
+}
+
+h1{
+    font-size: 50pt;
+    text-align: center;
+}
+table,th,td {
+  
+  border-collapse: collapse;
+}
+table {
+    border-spacing: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+    align-items: center;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Bank of India Catalog</h1>
+
+<button type="button" id="button" onclick="loadDoc()">Select the Branch</button>
+<br><br>
+<div id="showDet"></div>
+
+<table id="demo"></table>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "bank.xml", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>List of Branches</th></tr>";
+  var x = xmlDoc.getElementsByTagName("record");
+  for (i = 0; i <x.length; i++) { 
+    //table += "<tr><td><button type='button' onclick='dispFunction(" +i+ "," + x + ")'" + ">";
+    table += "<tr><td><button id='obutton' type='button' onclick='displayDetails(" +i+ ")'" + ">";
+    table += x[i].getElementsByTagName("branch")[0].childNodes[0].nodeValue +
+    "</button></td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+
+function displayDetails(i){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            dispFunction(this, i);
+        }
+    };
+    xhttp.open("GET", "bank.xml", true);
+    xhttp.send();
+}
+
+function dispFunction(xml, i){
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName("record");
+    var details = "<table>";
+    var details = "<tr><th>State :      </th><td>" + x[i].getElementsByTagName("state")[0].childNodes[0].nodeValue + "</td></tr>";
+    details += "<br><tr><th>City/Town :      </th><td>" + x[i].getElementsByTagName("district")[0].childNodes[0].nodeValue + "</td></tr>";
+    details += "<br><tr><th>Branch :      </th><td>" + x[i].getElementsByTagName("branch")[0].childNodes[0].nodeValue + "</td></tr>";
+    details += "<br><tr><th>Located at :      </th><td>" + x[i].getElementsByTagName("address")[0].childNodes[0].nodeValue + "</td></tr>";
+    details += "<br><tr><th>IFScode:      </th><td>" + x[i].getElementsByTagName("ifsc")[0].childNodes[0].nodeValue + "</td></tr>";
+    details += "<br><tr><th>Branch code:      </th><td>" + x[i].getElementsByTagName("bcode")[0].childNodes[0].nodeValue + "</td></tr>";
+    details += "</table>";
+    details += "<br><br><br><br><br>";
+    document.getElementById("showDet").innerHTML = details;
+}
+
+</script>
+
+</body>
+</html>
