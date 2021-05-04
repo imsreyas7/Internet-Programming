@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vehicle Plaza</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>VEHICLE DETAILS</h1>
+
+        <button type="button" id="button" onclick="loadDoc()">Select the Vehicle</button>
+        <div id="showDet"></div>
+        <table id="demo"></table>
+
+        <script>
+            function loadDoc()
+            {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200){
+                        myfunction(this);
+                    }
+                };
+                xhttp.open("GET","vehicle.xml",true);
+                xhttp.send();
+            }
+
+            function myfunction(xml){
+                var i;
+                var xmlDoc = xml.responseXML;
+                var table = "<tr><th>List of Vehicles</th></tr>";
+                table += "<tr><th>RegNo.</th><th>Type</th></tr>";
+                var x = xmlDoc.getElementsByTagName("record");
+                for(i=0; i<x.length; i++){
+                    table += "<tr><td>" + x[i].getElementsByTagName("regno")[0].childNodes[0].nodeValue + "</td>"; 
+                    table += "<td>" + x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue + "</td>";
+                    table += "<td><button id='obutton' type='button' onClick='displayDetails(" +i+ ")'" + ">";
+                    table += "Display </button></tr>";
+
+                }
+                document.getElementById("demo").innerHTML = table;
+            }
+
+            function displayDetails(i){
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function(){
+                    if(this.readyState == 4 && this.status == 200){
+                        dispFunction(this,i);
+                    }
+                };
+                xhttp.open("GET","vehicle.xml",true);
+                xhttp.send();
+            }
+
+            function dispFunction(xml,i){
+                var xmlDoc = xml.responseXML;
+                var x = xmlDoc.getElementsByTagName("record");
+                var details ="<table>";
+                var details = "<tr><th>Owner :   </th><td>" + x[i].getElementsByTagName("owner")[0].childNodes[0].nodeValue + "</td></tr>";
+                details += "<br><tr><th>Model :   </th><td>" + x[i].getElementsByTagName("model")[0].childNodes[0].nodeValue + "</td></tr>";
+                details += "<br><tr><th>Colour :   </th><td>" + x[i].getElementsByTagName("colour")[0].childNodes[0].nodeValue + "</td></tr>";
+                details+="</table>";
+                details += "<br><br>";
+                document.getElementById("showDet").innerHTML = details;
+
+            }
+        </script>
+    </body>
+</html>

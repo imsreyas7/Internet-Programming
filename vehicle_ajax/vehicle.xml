@@ -1,0 +1,23 @@
+<vehicle>
+    <record>
+        <regno>7251</regno>
+        <owner>Akash</owner>
+        <type>car</type>
+        <model>sedan</model>
+        <colour>blue</colour>
+    </record>
+    <record>
+        <regno>1234</regno>
+        <owner>Riya</owner>
+        <type>car</type>
+        <model>hatchback</model>
+        <colour>grey</colour>
+    </record>
+    <record>
+        <regno>9924</regno>
+        <owner>Bryan</owner>
+        <type>bike</type>
+        <model>diesel</model>
+        <colour>black</colour>
+    </record>
+</vehicle>

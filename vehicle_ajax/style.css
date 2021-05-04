@@ -1,0 +1,58 @@
+body
+{
+    background-image: linear-gradient(90deg, black 32%, rgb(4, 46, 73) 62% );
+    color: azure;
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+#button
+{
+    width: 30%;
+    background-color: rgb(9,90,90);
+    color: lightcyan;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid white;
+    padding: 8px 8px;
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 mintcream, 0 4px 8px 0 mintcream;
+}
+
+#obutton
+{
+    width: 90%;
+    background-color: rgb(9,90,90);
+    color: lightcyan;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+    border: 1px solid white;
+    padding: 8px 8px;
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 mintcream, 0 4px 8px 0 mintcream;
+}
+
+h1
+{
+    font-size: 50pt;
+    text-align: center;
+}
+
+table
+{
+    border-spacing: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width : 8%;
+   
+    
+}
+
+th,td{
+    padding: 5px;
+    
+}
