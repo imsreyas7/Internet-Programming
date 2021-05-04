@@ -1,0 +1,5 @@
+{"_id":"P1","name":"Zakir Khan","age":45,"artist":"Indian"}
+{"_id":"P3","name":"Anirudh","age":30,"artist":"Indian"}
+{"_id":"P5","name":"Arijit Singh","age":29,"artist":"Indian"}
+{"_id":"P4","name":"Skrillex","age":35,"artist":"PopEDM"}
+{"_id":"P2","name":"Bob Marley","age":55,"artist":"Rock"}
