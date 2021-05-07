@@ -1,0 +1,51 @@
+<web-app>
+	<servlet>
+		<servlet-name>Patient</servlet-name>
+		<servlet-class>Patient</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Patient</servlet-name>
+		<url-pattern>/Patient</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddRecord</servlet-name>
+		<servlet-class>AddRecord</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddRecord</servlet-name>
+		<url-pattern>/AddRecord</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SearchRec</servlet-name>
+		<servlet-class>SearchRec</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchRec</servlet-name>
+		<url-pattern>/SearchRec</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DelRecord</servlet-name>
+		<servlet-class>DelRecord</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DelRecord</servlet-name>
+		<url-pattern>/DelRecord</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateRec</servlet-name>
+		<servlet-class>UpdateRec</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateRec</servlet-name>
+		<url-pattern>/UpdateRec</url-pattern>
+	</servlet-mapping>
+</web-app>

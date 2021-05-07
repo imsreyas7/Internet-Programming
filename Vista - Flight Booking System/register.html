@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TBS - New User</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function reg(){             
+                alert("Successfully Registered!");
+                window.open("patient.html");                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to Vista Tickets!</h1>
+        <h1><br></h1>
+        <div style="text-align: center;">
+            <form style="width: 50%; border-radius: 30px; box-shadow: 0 6px 20px 0 cyan, 0 6px 20px 0 cyan;">
+            <h2 style="color:rgb(253, 165, 0);">NEW USER</h2><br>
+            Name  :<input type="text" name="myname" id="myuname"/><br><br>
+            Username :<input type="text" name="uname" id="uname"/><br><br>
+            Password  : <input type="password" name="pwd" id="pwd"/><br><br>
+            <input type="submit" value="Register" id="button" onclick="reg()"/>
+            </form>
+        </div>
+        
+    </body>
+</html>
